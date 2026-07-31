@@ -1,0 +1,78 @@
+{
+  "json": {
+    "files": 20,
+    "rows": 1000,
+    "unique": 994,
+    "duplicates": [
+      {
+        "id": "c_000285",
+        "first": "page_006.json:35",
+        "repeat": "page_012.json:16"
+      },
+      {
+        "id": "c_000263",
+        "first": "page_006.json:13",
+        "repeat": "page_013.json:46"
+      },
+      {
+        "id": "c_000367",
+        "first": "page_008.json:17",
+        "repeat": "page_014.json:37"
+      },
+      {
+        "id": "c_000453",
+        "first": "page_010.json:3",
+        "repeat": "page_015.json:23"
+      },
+      {
+        "id": "c_000254",
+        "first": "page_006.json:4",
+        "repeat": "page_016.json:50"
+      },
+      {
+        "id": "c_000224",
+        "first": "page_005.json:24",
+        "repeat": "page_017.json:48"
+      }
+    ]
+  },
+  "review": {
+    "data_rows": 207,
+    "headers": [
+      "id",
+      "name",
+      "category",
+      "city",
+      "address",
+      "rating",
+      "reviews_count",
+      "site",
+      "phone"
+    ]
+  },
+  "top5_categories": [
+    [
+      "IT-интегратор",
+      94
+    ],
+    [
+      "Оптовая торговля",
+      79
+    ],
+    [
+      "Рекламное агентство",
+      76
+    ],
+    [
+      "Строительная компания",
+      71
+    ],
+    [
+      "Юридические услуги",
+      63
+    ]
+  ],
+  "city_rating_count": 20,
+  "website_category_count": 22,
+  "source_zip_sha256": "754078681e565d0eb54e22b1b9832485db3e340ee66bea4df645c6d12ab5f2d8"
+}

@@ -1,0 +1,17 @@
+{
+  "files": 20,
+  "rows": 1000,
+  "valid": 1000,
+  "errors": 0,
+  "warnings": 0,
+  "unique": 994,
+  "duplicates": 6,
+  "duplicateExamples": [
+    "c_000285: page_006.json:35 -> page_012.json:16",
+    "c_000263: page_006.json:13 -> page_013.json:46",
+    "c_000367: page_008.json:17 -> page_014.json:37",
+    "c_000453: page_010.json:3 -> page_015.json:23",
+    "c_000254: page_006.json:4 -> page_016.json:50",
+    "c_000224: page_005.json:24 -> page_017.json:48"
+  ]
+}

@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_DB: polza
+          POSTGRES_USER: polza
+          POSTGRES_PASSWORD: polza
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U polza -d polza"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      DATABASE_URL: postgresql://polza:polza@localhost:5432/polza
+      DATABASE_SSL: "false"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Import JSON pages
+        run: npm run import:pages -- --data-dir=./data --replace
+
+      - name: Analyze review.csv
+        run: npm run import:review -- --file=./data/review.csv --report=./ANOMALIES.md --replace
+
+      - name: Check SQL queries
+        run: npm run check:db
+
+      - name: Production build
+        run: npm run build

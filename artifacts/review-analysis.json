@@ -1,0 +1,112 @@
+{
+  "stats": {
+    "rowsRead": 207,
+    "emptyRows": 2,
+    "validRows": 179,
+    "rowsWithErrors": 28,
+    "rowsWithWarningsOnly": 14,
+    "uniqueExternalIds": 202
+  },
+  "findings": [
+    {
+      "code": "DUPLICATE_OF_BASE_DIFFERENT_ID",
+      "count": 6,
+      "severity": "critical"
+    },
+    {
+      "code": "DUPLICATE_ID_IN_CSV",
+      "count": 6,
+      "severity": "critical"
+    },
+    {
+      "code": "EXACT_DUPLICATE_ROW",
+      "count": 6,
+      "severity": "critical"
+    },
+    {
+      "code": "INVALID_WEBSITE",
+      "count": 3,
+      "severity": "critical"
+    },
+    {
+      "code": "INVALID_REVIEWS_COUNT_FORMAT",
+      "count": 2,
+      "severity": "critical"
+    },
+    {
+      "code": "INVALID_PHONE",
+      "count": 2,
+      "severity": "critical"
+    },
+    {
+      "code": "CITY_ENCODING_BROKEN",
+      "count": 2,
+      "severity": "critical"
+    },
+    {
+      "code": "EMPTY_ROW",
+      "count": 2,
+      "severity": "critical"
+    },
+    {
+      "code": "RATING_OUT_OF_RANGE",
+      "count": 2,
+      "severity": "critical"
+    },
+    {
+      "code": "COLUMN_SHIFT_SUSPECTED",
+      "count": 1,
+      "severity": "critical"
+    },
+    {
+      "code": "NEGATIVE_REVIEWS_COUNT",
+      "count": 1,
+      "severity": "critical"
+    },
+    {
+      "code": "INVALID_RATING_FORMAT",
+      "count": 1,
+      "severity": "critical"
+    },
+    {
+      "code": "DUPLICATE_OF_BASE_BY_ID",
+      "count": 6,
+      "severity": "warning"
+    },
+    {
+      "code": "ID_OUTLIER",
+      "count": 6,
+      "severity": "warning"
+    },
+    {
+      "code": "WEBSITE_SHARED_IN_CSV",
+      "count": 2,
+      "severity": "warning"
+    },
+    {
+      "code": "WEBSITE_CONFLICT_WITH_BASE",
+      "count": 2,
+      "severity": "warning"
+    },
+    {
+      "code": "CITY_NON_RUSSIAN_VARIANT",
+      "count": 1,
+      "severity": "warning"
+    },
+    {
+      "code": "CITY_CASE_VARIANT",
+      "count": 1,
+      "severity": "warning"
+    },
+    {
+      "code": "RATING_COMMA_SEPARATOR",
+      "count": 1,
+      "severity": "warning"
+    },
+    {
+      "code": "CITY_TYPO",
+      "count": 1,
+      "severity": "warning"
+    }
+  ]
+}

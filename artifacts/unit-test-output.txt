@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: parseCsv handles quoted commas and comma-only rows
+ok 1 - parseCsv handles quoted commas and comma-only rows
+  ---
+  duration_ms: 1.212855
+  type: 'test'
+  ...
+# Subtest: extractRecords supports nested API wrappers
+ok 2 - extractRecords supports nested API wrappers
+  ---
+  duration_ms: 0.794726
+  type: 'test'
+  ...
+# Subtest: extractCompany maps English aliases and normalizes contacts
+ok 3 - extractCompany maps English aliases and normalizes contacts
+  ---
+  duration_ms: 1.698454
+  type: 'test'
+  ...
+# Subtest: extractCompany rejects a row without company name
+ok 4 - extractCompany rejects a row without company name
+  ---
+  duration_ms: 0.168489
+  type: 'test'
+  ...
+# Subtest: normalizeText removes duplicate whitespace and normalizes ё
+ok 5 - normalizeText removes duplicate whitespace and normalizes ё
+  ---
+  duration_ms: 1.813604
+  type: 'test'
+  ...
+# Subtest: normalizeEmail extracts first email and lowercases it
+ok 6 - normalizeEmail extracts first email and lowercases it
+  ---
+  duration_ms: 0.40545
+  type: 'test'
+  ...
+# Subtest: email validation rejects malformed values
+ok 7 - email validation rejects malformed values
+  ---
+  duration_ms: 0.33131
+  type: 'test'
+  ...
+# Subtest: normalizePhone converts Russian 8 prefix and rejects letters
+ok 8 - normalizePhone converts Russian 8 prefix and rejects letters
+  ---
+  duration_ms: 0.191063
+  type: 'test'
+  ...
+# Subtest: normalizeWebsite accepts only explicit http/https URLs
+ok 9 - normalizeWebsite accepts only explicit http/https URLs
+  ---
+  duration_ms: 0.680787
+  type: 'test'
+  ...
+# Subtest: dedupe key is stable for the same identity
+ok 10 - dedupe key is stable for the same identity
+  ---
+  duration_ms: 0.42573
+  type: 'test'
+  ...
+# Subtest: review validator finds disguised duplicate with another id
+ok 11 - review validator finds disguised duplicate with another id
+  ---
+  duration_ms: 3.855627
+  type: 'test'
+  ...
+# Subtest: review validator does not truncate decimal reviews_count
+ok 12 - review validator does not truncate decimal reviews_count
+  ---
+  duration_ms: 0.492589
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 81.37249
